@@ -1,0 +1,33 @@
+646468609536
+
+https://646468609536.signin.aws.amazon.com/console
+
+
+
+
+#!/bin/bash
+sudo su
+yum install -y
+yum install httpd
+systemctl start httpd.service
+systemctl enable httpd.service
+echo "Apache Server" > /var/www/html/index.html
+
+
+
+#!/bin/bash
+yum update -y
+yum install -y httpd.x86_64
+systemctl start httpd.service
+systemctl enable httpd.service
+echo "Apache Server" > /var/www/html/index.html
+
+
+
+#!/bin/bash
+sudo su
+yum update -y
+yum install -y httpd.x86_64
+systemctl start httpd.service
+systemctl enable httpd.service
+echo "Server Check from $(hostname -f)" > /var/www/html/index.html
