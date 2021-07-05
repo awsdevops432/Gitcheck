@@ -1,1 +1,2 @@
-cat this is new file
+#!/bin/bash
+this is shell file
