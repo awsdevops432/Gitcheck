@@ -1,2 +1,2 @@
 #!/bin/bash
-this is shell file
+echo this is shell file
